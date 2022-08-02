@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        height=device-height, maximum-scale=1.0, target-density, Dpi=device-dpi, user-scalable=no">
+        <link rel="stylesheet" href="style.css" http-equiv="content-type">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>WelikeFood</title>
+<style>
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+ 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  text-align: center;
+ height: 40px;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(204, 203, 203);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+ 
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<style>
+    @media only screen and (max-width: 700px) {
+        #deuxieme {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        #deuxieme {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <div><img src="images/mb.jpg" alt="" width="150px";/> </div>
+    </div>
+        <div id="bar_navig">
+        <input type="search" name="sear" id="sear" value="nourriture" width="400px";/>
+        <li class="mic"><span class="iconify" data-icon="ph:microphone" style="color: rgb(43, 152, 255);" data-width="24" data-height="24" ></span></li> 
+        <li class="view"><span class="iconify" data-icon="fluent:search-visual-24-filled" style="color: rgb(43, 152, 255);" data-width="24" data-height="24"></span></li>
+         <li class="search"><span class="iconify" data-icon="fe:search" style="color: rgb(43, 152, 255);" data-width="24" data-height="24"></span></li>
+    </div>
+        <div class="sub"><button input type="submit">Connexion</button> </div>
+        <div class="barre"><span class="iconify" data-icon="codicon:three-bars" style="color: gray;" data-width="24" data-height="24"></span></div>
+    </header>
+    <div id="menu">
+        <div>  <li class="nav-item"><a  href="#" class="Tout b">Tout</a> </div>
+          <div>  <li class="nav-item"><a href="#"  class="actu b">Actualités</a></li> </div>
+          <div>   <li class="nav-item"><a href="#" class="im b" id="ip" >Images</a></li></div>
+          <div>    <li class="nav-item"><a  href="#" class="vid b">Videos </a></li> </div>
+          <div>  <li class="nav-item"><a  href="#"class="cart b" >Cartes</a></li></div>
+   
+
+<div class="fa">Filtre adulte:</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><strong class="mo"> Modéré <span>&#9660;</span></strong></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Stricte</a>
+    <a href="#about">Modéré</a>
+    <a href="#contact">Désactivé</a>
+  </div>
+</div>
+<a href="#" class="f">Filtre</a><span class="iconify" data-icon="iconoir:filter" data-width="16" data-height="16"></span>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div class="trait"></div>
+<br>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+<div class="ep swiper-slide"><a href="#" class="lie"> <img src="images/th.jpg"     alt="" class="tof"  >Nourriture<br/> <strong>PNG</strong> </a> </div> 
+<div class="ep swiper-slide"><a href="#" class="lie"> <img src="images/th1.jpg" alt="" class="tof" >Nourriture<br/> <strong>Cartoon</strong></a> </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th2.jpg" alt="" class="tof" >Nourriture<br/><strong>à Colorier</strong></a>  </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th3.jpg" alt="" class="tof" >Nourriture<br/><strong>Française</strong></a>  </div>
+<div class="ep swiper-slide"><a href="#" class="lie"> <img src="images/th4.jpg" alt="" class="tof" >Nourriture<br/><strong>Bébé</strong></a>  </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th5.jpg" alt="" class="tof" >Nourriture<br/><strong>Africaine</strong></a> </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th6.jpg" alt="" class="tof" ><strong>Chinois</strong><br/>Nourriture</a> </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th7.jpg" alt="" class="tof" >viande</div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th.jpg"     alt="" class="tof"  >Nourriture<br/> <strong>PNG</strong></a>  </div> 
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th1.jpg" alt="" class="tof" >Nourriture<br/> <strong>Cartoon</strong></a>  </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th2.jpg" alt="" class="tof" >Nourriture<br/><strong>à Colorier</strong></a>  </div>
+<div class="ep swiper-slide"><a href="#" class="lie"><img src="images/th3.jpg" alt="" class="tof" >Nourriture<br/><strong>Française</strong></a>  </div>
+
+
+
+    </div>
+    <div class="swiper-button-next" style="color: black;"></div>
+    <div class="swiper-button-prev" style="color: black;"></div>
+</div> 
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Scrollons avec swipp -->
+<script src="script.js"></script>
+<br/>
+
+
+  
+  <section id="deuxieme">
+    <div id="bloc8">
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">3500 x 6400 <sup>.</sup> jpg</p>
+                        <p class="t-1"> aliment nourriture assortis</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                   aliment nourriture assortis
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1"> Téléchargez fond d'ecran nourriture gratuitement</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    Téléchargez fond d'ecran nourriture gratuitement
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1">reve de nourriture</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    reve de nourriture
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1">nourriture-page 29</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    nourriture-page 29
+                </span>
+            </p>
+        </a>
+       
+    </div>
+</section>
+
+<!--TROIDIEME SECTION -->
+
+<section id="troisieme">
+    <div id="bloc9">
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1">Téléchargez fond d'ecran nourriture</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    Téléchargez fond d'ecran nourriture
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1">La nourriture bio bonne pour la santé</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    La nourriture bio bonne pour la santé
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1"> wallpapers Nourriture Allemande-MaximumWall</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    wallpapers Nourriture Allemande-MaximumWall
+                </span>
+            </p>
+        </a>
+        <a class="link" href="#">
+            <div class="cor1">
+                <div class="fond">
+                    <div class="imj15"></div>
+                    <p class="titl">
+                        <p class="t-1">4800 x 3200 <sup>.</sup> jpg</p>
+                        <p class="t-1">wallpapers Nourriture Allemande-MaximumWall</p>
+                    </p>
+                </div>
+            </div>
+            <p class="title">
+                <span>
+                    wallpapers Nourriture Allemande-MaximumWall
+                </span>
+            </p>
+        </a>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+  <!--
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/téléchargement (2).jpg">
+        <img src="images/téléchargement (2).jpg" alt="Northern Lights" width="600" height="400" >
+        <div class="texte">Add a description of the image here</div>
+      </a>
+      <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/téléchargement.jpg">
+        <img src="images/téléchargement.jpg" alt="Mountains" width="600" height="400">
+        <div class="texte">Add a description of the image here</div>
+      </a>
+      <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/téléchargement (4).jpg">
+          <img src="images/téléchargement (4).jpg" alt="Mountains" width="600" height="400">
+          <div class="texte">Add a description of the image here</div>
+        </a>
+        <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+      </div>
+    </div>
+  
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/téléchargement (7).jpg">
+          <img src="images/téléchargement (7).jpg" alt="Mountains" width="600" height="400">
+          <div class="texte">Add a description of the image here</div>
+        </a>
+        <div class="desc"><a href="#">Add a description of the image here 600x400</a> </div>
+      </div>
+    </div>
+  
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/téléchargement (3).jpg">
+          <img src="images/téléchargement (3).jpg" alt="Mountains" width="600" height="400">
+          <div class="texte">Add a description of the image here</div>
+        </a>
+        <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+      </div>
+    </div>
+  
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/téléchargement (6).jpg">
+          <img src="images/téléchargement (6).jpg"alt="Mountains" width="600" height="400">
+          <div class="texte">Add a description of the image here</div>
+        </a>
+        <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/téléchargement (8).jpg">
+            <img src="images/téléchargement (8).jpg"alt="Mountains" width="600" height="400">
+            <div class="texte">Add a description of the image here</div>
+          </a>
+          <div class="desc"><a href="#"> Add a description of the image here 600x400</a></div>
+        </div>
+      </div>-->
+
+</body>
+</html>
+
